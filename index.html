@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIP Modul Házak – Kész otthon 90 nap alatt | GV Group</title>
+<meta name="description" content="Moduláris MgO SIP technológiával épített kulcsrakész házak 430.000 Ft/m²-től. A1 tűzálló, 50 év garancia, 90 napos átadás. GV Group, Debrecen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:      #0A0A0A;
+  --black-soft: #141414;
+  --white:      #FAFAFA;
+  --gray-lt:    #F4F4F2;
+  --gray-mid:   #E8E8E4;
+  --gray-border:#D4D4CE;
+  --coral:      #FF4D2E;
+  --coral-dk:   #E03A1E;
+  --coral-pale: rgba(255,77,46,.08);
+  --coral-glow: rgba(255,77,46,.2);
+  --text:       #0A0A0A;
+  --text-mid:   #3D3D3D;
+  --text-lt:    #8A8A85;
+  --line:       rgba(10,10,10,.07);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:var(--white);
+  color:var(--text);
+  overflow-x:hidden;
+}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--white);}
+::-webkit-scrollbar-thumb{background:var(--coral);}
+::selection{background:var(--coral);color:var(--white);}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:24px 0;
+  transition:all .4s ease;
+}
+nav.scrolled{
+  background:rgba(250,250,250,.96);
+  backdrop-filter:blur(24px);
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+  box-shadow:0 2px 24px rgba(10,10,10,.04);
+}
+.nav-inner{
+  max-width:1280px;margin:0 auto;padding:0 48px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
+.logo-mark{
+  width:40px;height:40px;
+  background:var(--coral);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.logo-mark svg{display:block;}
+.logo-text{line-height:1.25;}
+.logo-name{
+  font-family:'Syne',sans-serif;
+  font-size:16px;font-weight:800;
+  color:var(--black);letter-spacing:-.3px;
+}
+.logo-sub{
+  font-size:10px;font-weight:400;
+  color:var(--coral);letter-spacing:2.5px;
+  text-transform:uppercase;
+}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none;}
+.nav-links a{
+  font-size:12px;font-weight:500;
+  color:var(--text-lt);
+  text-decoration:none;letter-spacing:1px;
+  text-transform:uppercase;
+  transition:color .25s;
+}
+.nav-links a:hover{color:var(--black);}
+.nav-cta{
+  background:var(--coral) !important;
+  color:var(--white) !important;
+  padding:11px 24px;
+  font-size:11px !important;
+  font-weight:600 !important;
+  letter-spacing:1.5px;
+  transition:background .25s !important;
+}
+.nav-cta:hover{background:var(--coral-dk) !important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{width:22px;height:1.5px;background:var(--black);transition:all .3s;}
+.mobile-menu{
+  display:none;position:fixed;inset:0;
+  background:var(--black);z-index:999;
+  flex-direction:column;align-items:center;
+  justify-content:center;gap:48px;
+}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{
+  font-family:'Syne',sans-serif;
+  font-size:36px;font-weight:700;
+  color:var(--white);text-decoration:none;
+  letter-spacing:-.5px;transition:color .2s;
+}
+.mobile-menu a:hover{color:var(--coral);}
+.mobile-close{
+  position:absolute;top:32px;right:40px;
+  font-size:22px;cursor:pointer;
+  color:var(--text-lt);
+}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  display:grid;grid-template-columns:1fr 1fr;
+  position:relative;
+  padding-top:0;
+}
+.hero-left{
+  background:var(--black);
+  display:flex;align-items:center;
+  padding:160px 80px 100px 80px;
+  position:relative;
+  overflow:hidden;
+}
+.hero-left::before{
+  content:'';
+  position:absolute;
+  top:-200px;right:-200px;
+  width:500px;height:500px;
+  background:radial-gradient(circle,rgba(255,77,46,.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-left::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:0;right:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,77,46,.3),transparent);
+}
+.hero-content{position:relative;z-index:1;max-width:520px;}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:10px;font-weight:600;
+  color:var(--coral);letter-spacing:4px;text-transform:uppercase;
+  margin-bottom:36px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.hero-tag::before{
+  content:'';width:28px;height:1px;background:var(--coral);
+}
+.hero h1{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(60px,7vw,96px);
+  font-weight:800;line-height:.95;
+  letter-spacing:-3px;
+  margin-bottom:32px;
+}
+.hero h1 .line-white{color:var(--white);}
+.hero h1 .line-coral{color:var(--coral);}
+.hero-sub{
+  font-size:15px;font-weight:300;
+  color:rgba(250,250,250,.5);
+  line-height:1.8;
+  max-width:420px;
+  margin-bottom:44px;
+  padding-left:16px;
+  border-left:2px solid rgba(255,77,46,.4);
+}
+.hero-sub b{color:rgba(250,250,250,.8);font-weight:500;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-coral{
+  background:var(--coral);color:var(--white);
+  padding:15px 36px;
+  font-size:11px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;
+  display:inline-flex;align-items:center;gap:10px;
+  transition:all .25s;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  box-shadow:0 8px 28px rgba(255,77,46,.3);
+}
+.btn-coral:hover{
+  background:var(--coral-dk);
+  transform:translateY(-2px);
+  box-shadow:0 14px 36px rgba(255,77,46,.4);
+}
+.btn-outline-w{
+  background:transparent;color:rgba(250,250,250,.6);
+  padding:14px 32px;
+  font-size:11px;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;
+  border:1px solid rgba(250,250,250,.15);
+  transition:all .25s;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.btn-outline-w:hover{
+  border-color:var(--coral);
+  color:var(--coral);
+}
+.hero-stats{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;background:rgba(250,250,250,.06);
+  margin-top:56px;
+  border:1px solid rgba(250,250,250,.06);
+}
+.hs-item{
+  padding:20px 20px;
+  background:rgba(20,20,20,.8);
+  transition:background .3s;
+}
+.hs-item:hover{background:rgba(255,77,46,.1);}
+.hs-num{
+  font-family:'Syne',sans-serif;
+  font-size:28px;font-weight:800;
+  color:var(--coral);line-height:1;
+  margin-bottom:4px;letter-spacing:-1px;
+}
+.hs-label{
+  font-size:10px;font-weight:500;
+  color:rgba(250,250,250,.3);
+  letter-spacing:1.5px;text-transform:uppercase;
+}
+
+.hero-right{
+  position:relative;overflow:hidden;
+}
+.hero-right img{
+  width:100%;height:100%;
+  object-fit:cover;
+  filter:saturate(.85) brightness(.95);
+  transition:transform 10s ease;
+  transform:scale(1.05);
+}
+.hero-right img.loaded{transform:scale(1);}
+.hero-right-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(10,10,10,.4) 0%,transparent 50%);
+}
+.hero-badge{
+  position:absolute;bottom:40px;right:40px;
+  background:var(--coral);
+  color:var(--white);
+  padding:16px 24px;
+  font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:800;
+  letter-spacing:-.3px;
+  text-align:center;
+  box-shadow:0 8px 32px rgba(255,77,46,.4);
+}
+.hero-badge span{
+  display:block;font-size:10px;font-weight:400;
+  letter-spacing:2px;text-transform:uppercase;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  opacity:.8;margin-top:2px;
+}
+.hero-scroll-indicator{
+  position:absolute;bottom:48px;left:80px;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:rgba(250,250,250,.2);
+  font-size:9px;letter-spacing:3px;text-transform:uppercase;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.scroll-line{
+  width:1px;height:48px;
+  background:linear-gradient(var(--coral),transparent);
+  animation:scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse{0%,100%{opacity:.4;}50%{opacity:1;}}
+
+/* ── MARQUEE ── */
+.marquee-wrap{
+  background:var(--black);
+  padding:16px 0;overflow:hidden;
+  border-top:1px solid rgba(255,77,46,.15);
+  border-bottom:1px solid rgba(255,77,46,.08);
+}
+.marquee-track{
+  display:flex;width:max-content;
+  animation:marquee 28s linear infinite;
+}
+.marquee-track:hover{animation-play-state:paused;}
+.marquee-item{
+  display:inline-flex;align-items:center;gap:14px;
+  padding:0 36px;
+  font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:700;
+  color:rgba(250,250,250,.35);
+  letter-spacing:2px;text-transform:uppercase;
+  white-space:nowrap;
+}
+.m-dot{
+  width:5px;height:5px;
+  background:var(--coral);flex-shrink:0;
+  transform:rotate(45deg);
+}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ── STATS BAND ── */
+.stats-band{
+  background:var(--gray-lt);
+  border-bottom:1px solid var(--line);
+}
+.stats-row{
+  max-width:1280px;margin:0 auto;padding:0 48px;
+  display:grid;grid-template-columns:repeat(5,1fr);
+}
+.stat-col{
+  padding:52px 32px;
+  border-right:1px solid var(--line);
+  text-align:center;position:relative;
+  overflow:hidden;transition:background .3s;
+}
+.stat-col:last-child{border-right:none;}
+.stat-col::after{
+  content:'';
+  position:absolute;bottom:0;left:50%;
+  transform:translateX(-50%);
+  width:0;height:3px;
+  background:var(--coral);
+  transition:width .4s;
+}
+.stat-col:hover{background:var(--white);}
+.stat-col:hover::after{width:40%;}
+.stat-num{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(44px,4.5vw,66px);
+  font-weight:800;line-height:1;
+  color:var(--black);
+  margin-bottom:10px;
+  letter-spacing:-2px;
+}
+.stat-num sup{font-size:.45em;vertical-align:super;font-weight:700;letter-spacing:0;}
+.stat-unit{
+  font-size:11px;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--coral);
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.stat-note{
+  font-size:12px;font-weight:300;
+  color:var(--text-lt);margin-top:4px;
+  line-height:1.5;
+}
+
+/* ── SECTIONS ── */
+.sec-inner{max-width:1280px;margin:0 auto;padding:0 48px;}
+.sec-pad{padding:120px 0;}
+
+.tag{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:10px;font-weight:700;
+  letter-spacing:4px;text-transform:uppercase;
+  color:var(--coral);margin-bottom:20px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.tag::before{content:'';width:24px;height:2px;background:var(--coral);}
+.tag-lt{color:rgba(255,77,46,.6);}
+.tag-lt::before{background:rgba(255,77,46,.4);}
+
+.sec-title{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(36px,5vw,64px);
+  font-weight:800;line-height:1;
+  letter-spacing:-2px;
+  margin-bottom:20px;
+}
+.sec-title em{font-style:normal;color:var(--coral);}
+.sec-title-lt{color:var(--white);}
+.sec-sub{
+  font-size:15px;font-weight:300;
+  line-height:1.8;max-width:560px;
+  color:var(--text-lt);margin-bottom:60px;
+}
+.sec-sub-lt{color:rgba(250,250,250,.45);}
+
+/* ── TECHNOLOGY ── */
+.tech-section{background:var(--white);}
+.pillars-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--line);
+  border:1px solid var(--line);
+  margin-bottom:80px;
+}
+.pillar{
+  padding:44px 40px;
+  background:var(--white);
+  position:relative;overflow:hidden;
+  transition:all .35s;
+}
+.pillar::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;
+  height:3px;background:var(--coral);
+  transform:scaleX(0);transition:transform .4s;
+  transform-origin:left;
+}
+.pillar:hover{background:var(--gray-lt);}
+.pillar:hover::before{transform:scaleX(1);}
+.pillar-num{
+  font-family:'Syne',sans-serif;
+  font-size:56px;font-weight:800;
+  color:rgba(10,10,10,.05);
+  line-height:1;margin-bottom:-10px;
+  letter-spacing:-3px;
+  transition:color .3s;
+}
+.pillar:hover .pillar-num{color:rgba(255,77,46,.08);}
+.pillar-icon{font-size:28px;margin-bottom:16px;display:block;}
+.pillar h3{
+  font-family:'Syne',sans-serif;
+  font-size:20px;font-weight:700;
+  color:var(--black);margin-bottom:10px;letter-spacing:-.3px;
+}
+.pillar p{font-size:13px;color:var(--text-lt);line-height:1.7;}
+
+/* PANEL LAYERS */
+.panel-section{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:start;
+}
+.panel-visual{
+  position:relative;
+}
+.layer-stack{
+  display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--line);
+  overflow:hidden;
+}
+.layer-row{
+  display:grid;grid-template-columns:56px 1fr auto;
+  align-items:center;gap:20px;
+  padding:22px 28px;
+  border-bottom:1px solid var(--line);
+  transition:all .3s;cursor:default;
+}
+.layer-row:last-child{border-bottom:none;}
+.layer-row:hover{background:var(--gray-lt);padding-left:36px;}
+.l-num{
+  width:40px;height:40px;
+  background:var(--black);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;
+  font-size:18px;font-weight:800;
+  color:var(--white);flex-shrink:0;
+  transition:background .3s;
+}
+.layer-row:hover .l-num{background:var(--coral);}
+.l-text strong{display:block;font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px;}
+.l-text span{font-size:12px;color:var(--text-lt);}
+.l-tag{
+  font-size:9px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--coral);
+  background:var(--coral-pale);
+  padding:4px 10px;
+  white-space:nowrap;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+/* COMPARISON TABLE */
+.comp-wrap{border:1px solid var(--line);overflow:hidden;margin-top:48px;}
+.comp-table{width:100%;border-collapse:collapse;}
+.comp-table th{
+  padding:18px 24px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:10px;font-weight:700;
+  letter-spacing:2.5px;text-transform:uppercase;
+  text-align:center;
+}
+.comp-table th:first-child{text-align:left;background:var(--gray-lt);color:var(--text-lt);}
+.th-brick{background:#F5F2EE;color:#7A6A5A;}
+.th-eps{background:#EEF3F5;color:#4A7080;}
+.th-mod{background:var(--black);color:var(--white);}
+.mod-chip{
+  display:inline-block;
+  background:var(--coral);color:var(--white);
+  font-size:8px;font-weight:700;
+  padding:2px 8px;letter-spacing:2px;margin-top:4px;
+}
+.comp-table td{
+  padding:14px 24px;font-size:13px;
+  border-bottom:1px solid var(--line);
+}
+.comp-table td:first-child{font-weight:500;color:var(--text-mid);background:var(--gray-lt);}
+.td-b{text-align:center;background:#FAFAF8;color:#7A6A5A;}
+.td-e{text-align:center;background:#F5F9FB;color:#4A7080;}
+.td-m{text-align:center;background:rgba(10,10,10,.02);font-weight:700;color:var(--black);}
+.comp-table tr:hover td{background:rgba(255,77,46,.025) !important;}
+.yes{color:#15803D;font-weight:700;}
+.no{color:#DC2626;}
+.mid{color:#D97706;}
+
+/* ── ADVANTAGES ── */
+.adv-section{background:var(--black);}
+.adv-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:rgba(250,250,250,.05);
+}
+.adv-card{
+  background:rgba(20,20,20,.9);
+  padding:44px 36px;
+  position:relative;overflow:hidden;
+  transition:all .35s;
+  border:1px solid transparent;
+}
+.adv-card::after{
+  content:'';
+  position:absolute;top:0;left:0;
+  width:3px;height:100%;
+  background:var(--coral);
+  transform:scaleY(0);
+  transition:transform .4s;
+  transform-origin:top;
+}
+.adv-card:hover{
+  background:rgba(255,77,46,.07);
+  border-color:rgba(255,77,46,.15);
+  transform:translateY(-4px);
+}
+.adv-card:hover::after{transform:scaleY(1);}
+.adv-num{
+  font-family:'Syne',sans-serif;
+  font-size:48px;font-weight:800;
+  color:rgba(250,250,250,.04);
+  line-height:1;margin-bottom:0;
+  letter-spacing:-2px;
+  transition:color .3s;
+}
+.adv-card:hover .adv-num{color:rgba(255,77,46,.07);}
+.adv-icon{font-size:28px;display:block;margin-bottom:16px;margin-top:-8px;}
+.adv-card h3{
+  font-family:'Syne',sans-serif;
+  font-size:19px;font-weight:700;
+  color:var(--white);margin-bottom:10px;
+  letter-spacing:-.3px;
+}
+.adv-card p{font-size:13px;color:rgba(250,250,250,.4);line-height:1.7;}
+
+/* ── MODELS ── */
+.models-section{background:var(--gray-lt);}
+.filter-row{
+  display:flex;gap:8px;flex-wrap:wrap;
+  margin-bottom:48px;
+}
+.f-btn{
+  padding:9px 20px;
+  font-size:10px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:transparent;
+  border:1px solid var(--gray-border);
+  color:var(--text-lt);
+  cursor:pointer;transition:all .25s;
+}
+.f-btn:hover,.f-btn.active{
+  background:var(--black);
+  border-color:var(--black);
+  color:var(--white);
+}
+.models-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:2px;
+}
+.model-card{
+  background:var(--white);
+  overflow:hidden;
+  transition:all .35s;
+  position:relative;
+  border:1px solid transparent;
+}
+.model-card:hover{
+  box-shadow:0 20px 60px rgba(10,10,10,.12);
+  transform:translateY(-4px);
+  border-color:var(--coral);
+  z-index:2;
+}
+.model-card.hidden-card{display:none;}
+.model-img{
+  width:100%;aspect-ratio:4/3;
+  overflow:hidden;position:relative;
+}
+.model-img img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease;
+  filter:saturate(.9);
+}
+.model-card:hover .model-img img{transform:scale(1.06);}
+.model-tag{
+  position:absolute;top:0;left:0;
+  background:var(--black);
+  color:var(--white);
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:10px;font-weight:700;
+  padding:7px 14px;
+  letter-spacing:1.5px;text-transform:uppercase;
+}
+.model-body{padding:20px 24px 24px;}
+.model-name{
+  font-family:'Syne',sans-serif;
+  font-size:22px;font-weight:700;
+  color:var(--black);margin-bottom:8px;
+  letter-spacing:-.5px;
+}
+.model-specs{
+  display:flex;gap:16px;
+  font-size:12px;color:var(--text-lt);
+  margin-bottom:12px;
+}
+.model-price{
+  font-family:'Syne',sans-serif;
+  font-size:24px;font-weight:800;
+  color:var(--black);letter-spacing:-1px;
+}
+.model-price span{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:11px;font-weight:400;
+  color:var(--text-lt);margin-left:4px;
+  letter-spacing:.5px;
+}
+.model-card:hover .model-price{color:var(--coral);}
+.show-more-row{text-align:center;margin-top:48px;}
+.gv-link{
+  display:inline-flex;align-items:center;gap:8px;
+  margin-top:28px;
+  font-size:11px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--text-lt);text-decoration:none;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  border-bottom:1px solid var(--line);
+  padding-bottom:3px;
+  transition:all .25s;
+}
+.gv-link:hover{color:var(--black);border-color:var(--coral);}
+.gv-link svg{transition:transform .25s;}
+.gv-link:hover svg{transform:translateX(4px);}
+
+/* ── PROCESS ── */
+.process-section{background:var(--white);}
+.process-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  position:relative;padding-top:48px;
+}
+.process-grid::before{
+  content:'';position:absolute;
+  top:24px;left:8%;right:8%;
+  height:1px;
+  background:repeating-linear-gradient(90deg,var(--coral) 0,var(--coral) 8px,transparent 8px,transparent 16px);
+}
+.proc-step{text-align:center;padding:0 16px;position:relative;z-index:1;}
+.proc-num{
+  width:48px;height:48px;
+  background:var(--white);
+  border:2px solid var(--black);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;
+  font-size:20px;font-weight:800;
+  color:var(--black);
+  margin:0 auto 24px;
+  transition:all .3s;
+}
+.proc-step:hover .proc-num{
+  background:var(--coral);
+  border-color:var(--coral);
+  color:var(--white);
+  transform:scale(1.1);
+}
+.proc-step h4{
+  font-family:'Syne',sans-serif;
+  font-size:15px;font-weight:700;
+  color:var(--black);margin-bottom:8px;
+  letter-spacing:-.2px;
+}
+.proc-step p{font-size:12px;color:var(--text-lt);line-height:1.6;}
+.proc-time{
+  display:inline-block;margin-top:10px;
+  font-size:10px;font-weight:700;
+  color:var(--coral);letter-spacing:2px;text-transform:uppercase;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+/* ── CERTS ── */
+.certs-section{background:var(--gray-lt);border-top:1px solid var(--line);}
+.certs-row{
+  display:flex;gap:10px;flex-wrap:wrap;
+  justify-content:center;
+}
+.cert{
+  display:flex;align-items:center;gap:12px;
+  background:var(--white);
+  border:1px solid var(--line);
+  padding:16px 28px;
+  transition:all .3s;
+}
+.cert:hover{
+  border-color:var(--coral);
+  transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(255,77,46,.08);
+}
+.cert-ico{font-size:22px;}
+.cert-info strong{display:block;font-size:13px;font-weight:600;color:var(--black);}
+.cert-info span{font-size:11px;color:var(--text-lt);}
+
+/* ── CTA ── */
+.cta-section{
+  background:var(--coral);
+  padding:140px 0;
+  position:relative;overflow:hidden;
+}
+.cta-section::before{
+  content:'90';
+  position:absolute;right:-20px;top:50%;
+  transform:translateY(-50%);
+  font-family:'Syne',sans-serif;
+  font-size:500px;font-weight:800;
+  color:rgba(255,255,255,.06);
+  line-height:1;white-space:nowrap;
+  pointer-events:none;letter-spacing:-20px;
+}
+.cta-inner{
+  max-width:800px;margin:0 auto;
+  padding:0 48px;text-align:center;
+  position:relative;z-index:1;
+}
+.cta-inner .tag{
+  display:inline-flex;color:rgba(255,255,255,.7);
+  margin-bottom:20px;
+}
+.cta-inner .tag::before{background:rgba(255,255,255,.5);}
+.cta-inner h2{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(52px,8vw,100px);
+  font-weight:800;line-height:.95;
+  color:var(--white);margin-bottom:20px;
+  letter-spacing:-4px;
+}
+.cta-inner p{
+  font-size:16px;font-weight:300;
+  color:rgba(255,255,255,.7);
+  line-height:1.8;margin-bottom:48px;
+  max-width:500px;margin-left:auto;margin-right:auto;
+}
+.btn-white{
+  background:var(--white);color:var(--coral);
+  padding:16px 44px;
+  font-size:11px;font-weight:800;
+  letter-spacing:2.5px;text-transform:uppercase;
+  text-decoration:none;
+  display:inline-flex;align-items:center;gap:12px;
+  transition:all .25s;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  box-shadow:0 8px 32px rgba(10,10,10,.2);
+}
+.btn-white:hover{
+  background:var(--black);color:var(--white);
+  transform:translateY(-2px);
+}
+.btn-outline-c{
+  background:transparent;color:rgba(255,255,255,.7);
+  padding:15px 36px;
+  font-size:11px;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.3);
+  transition:all .25s;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.btn-outline-c:hover{
+  border-color:var(--white);color:var(--white);
+}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+/* ── CONTACT ── */
+.contact-section{background:var(--white);}
+.instant-banner{
+  background:var(--black);
+  padding:40px 52px;
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:64px;gap:24px;
+}
+.ib-text h3{
+  font-family:'Syne',sans-serif;
+  font-size:26px;font-weight:700;
+  color:var(--white);margin-bottom:6px;letter-spacing:-.5px;
+}
+.ib-text p{font-size:13px;color:rgba(250,250,250,.4);}
+.divider{
+  text-align:center;font-size:10px;font-weight:600;
+  letter-spacing:3.5px;text-transform:uppercase;
+  color:var(--text-lt);margin-bottom:56px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  position:relative;
+}
+.divider::before,.divider::after{
+  content:'';position:absolute;top:50%;
+  width:calc(50% - 130px);height:1px;background:var(--line);
+}
+.divider::before{left:0;}.divider::after{right:0;}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1.3fr;
+  gap:80px;align-items:start;
+}
+.contact-info h3{
+  font-family:'Syne',sans-serif;
+  font-size:28px;font-weight:700;
+  color:var(--black);margin-bottom:36px;letter-spacing:-.5px;
+}
+.c-item{display:flex;gap:18px;margin-bottom:28px;}
+.c-ico{
+  width:44px;height:44px;
+  background:var(--black);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+  transition:background .25s;
+}
+.c-item:hover .c-ico{background:var(--coral);}
+.c-text strong{display:block;font-size:14px;font-weight:600;color:var(--black);margin-bottom:3px;}
+.c-text span{font-size:13px;color:var(--text-lt);}
+.c-text a{color:var(--coral);text-decoration:none;}
+.form-box{
+  background:var(--gray-lt);
+  border:1px solid var(--line);
+  padding:48px;
+}
+.form-box h3{
+  font-family:'Syne',sans-serif;
+  font-size:24px;font-weight:700;
+  color:var(--black);margin-bottom:32px;letter-spacing:-.5px;
+}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-group{margin-bottom:18px;}
+.form-group label{
+  display:block;font-size:10px;font-weight:700;
+  letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--text-lt);margin-bottom:8px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;padding:14px 18px;
+  background:var(--white);
+  border:1px solid var(--gray-border);
+  font-size:14px;font-family:'Plus Jakarta Sans',sans-serif;
+  color:var(--text);
+  transition:border-color .25s;
+  outline:none;appearance:none;border-radius:0;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--coral);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{color:var(--text-lt);}
+.form-group select option{background:var(--white);color:var(--text);}
+.form-group textarea{resize:vertical;min-height:100px;}
+.btn-submit{
+  width:100%;padding:16px;
+  background:var(--black);color:var(--white);
+  border:none;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:11px;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;
+  cursor:pointer;transition:background .25s;margin-top:8px;
+}
+.btn-submit:hover{background:var(--coral);}
+.f-ok,.f-err{
+  display:none;padding:14px 18px;
+  margin-top:14px;font-size:13px;font-weight:500;
+}
+.f-ok{background:rgba(21,128,61,.07);color:#15803D;border-left:3px solid #15803D;}
+.f-err{background:rgba(220,38,38,.06);color:#DC2626;border-left:3px solid #DC2626;}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--black);
+  color:rgba(250,250,250,.35);
+  padding:80px 0 32px;
+  border-top:1px solid rgba(255,77,46,.1);
+}
+.footer-inner{max-width:1280px;margin:0 auto;padding:0 48px;}
+.footer-top{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:60px;
+  padding-bottom:48px;
+  border-bottom:1px solid rgba(250,250,250,.05);
+  margin-bottom:28px;
+}
+.footer-brand p{
+  font-size:13px;font-weight:300;
+  color:rgba(250,250,250,.3);
+  line-height:1.75;margin-top:20px;max-width:260px;
+}
+.footer-col h4{
+  font-size:9px;font-weight:700;
+  letter-spacing:3.5px;text-transform:uppercase;
+  color:var(--coral);margin-bottom:20px;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:10px;}
+.footer-col ul li a{
+  color:rgba(250,250,250,.3);font-size:13px;
+  text-decoration:none;font-weight:300;transition:color .25s;
+}
+.footer-col ul li a:hover{color:var(--white);}
+.footer-bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:10px;
+  font-size:11px;color:rgba(250,250,250,.15);
+}
+.footer-domain{
+  font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:700;
+  color:var(--coral);opacity:.6;
+  letter-spacing:-.3px;
+}
+
+/* ── SCROLL TOP ── */
+#scrollTop{
+  position:fixed;bottom:36px;right:36px;
+  width:48px;height:48px;
+  background:var(--coral);color:var(--white);
+  border:none;font-size:20px;cursor:pointer;
+  display:none;align-items:center;justify-content:center;
+  z-index:999;transition:all .25s;
+  font-family:'Syne',sans-serif;font-weight:800;
+}
+#scrollTop:hover{background:var(--coral-dk);transform:translateY(-3px);}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr;}
+  .hero-right{height:400px;}
+  .stats-row{grid-template-columns:repeat(3,1fr);}
+  .adv-grid{grid-template-columns:repeat(2,1fr);}
+  .process-grid{grid-template-columns:repeat(3,1fr);}
+  .process-grid::before{display:none;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .panel-section{grid-template-columns:1fr;}
+}
+@media(max-width:900px){
+  .hero-left{padding:130px 48px 80px;}
+  .pillars-grid{grid-template-columns:1fr;}
+  .models-grid{grid-template-columns:repeat(2,1fr);}
+  .contact-grid{grid-template-columns:1fr;}
+  .instant-banner{flex-direction:column;gap:20px;}
+}
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .sec-inner,.nav-inner{padding:0 24px;}
+  .hero-left{padding:120px 24px 80px;}
+  .sec-pad{padding:80px 0;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+  .adv-grid{grid-template-columns:1fr;}
+  .models-grid{grid-template-columns:1fr;}
+  .process-grid{grid-template-columns:1fr;gap:32px;}
+  .footer-top{grid-template-columns:1fr;gap:32px;}
+  .footer-inner{padding:0 24px;}
+  .form-row{grid-template-columns:1fr;}
+  .form-box{padding:28px 24px;}
+  .cta-inner{padding:0 24px;}
+  .instant-banner{padding:28px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">
+        <svg width="22" height="20" viewBox="0 0 22 20" fill="none">
+          <polygon points="11,0 22,7 22,20 0,20 0,7" fill="white" opacity=".9"/>
+          <polygon points="11,4 18,9 18,16 4,16 4,9" fill="#FF4D2E"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-name">SIP Modul Házak</div>
+        <div class="logo-sub">GV Group</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#technologia">Technológia</a></li>
+      <li><a href="#elonyok">Előnyök</a></li>
+      <li><a href="#modellek">Modellek</a></li>
+      <li><a href="#folyamat">Folyamat</a></li>
+      <li><a href="#kapcsolat">Kapcsolat</a></li>
+      <li><a href="https://lead.gvgroup.hu/" class="nav-cta">Ajánlat →</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" id="mobileClose">✕</span>
+  <a href="#technologia" onclick="closeMobileMenu()">Technológia</a>
+  <a href="#elonyok" onclick="closeMobileMenu()">Előnyök</a>
+  <a href="#modellek" onclick="closeMobileMenu()">Modellek</a>
+  <a href="#folyamat" onclick="closeMobileMenu()">Folyamat</a>
+  <a href="#kapcsolat" onclick="closeMobileMenu()">Kapcsolat</a>
+  <a href="https://lead.gvgroup.hu/" style="color:var(--coral)">Ajánlat →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-content">
+      <div class="hero-tag">GV Group · Debrecen · MgO SIP</div>
+      <h1>
+        <span class="line-white">Kész otthon.</span>
+        <span class="line-coral">90 nap alatt.</span>
+      </h1>
+      <p class="hero-sub">
+        Moduláris MgO SIP technológiával épített, kulcsrakész házak
+        <b>430.000 Ft/m²-től.</b>
+        Pontosan tervezett, gyorsan felépített, hosszan tartó.
+      </p>
+      <div class="hero-btns">
+        <a href="https://lead.gvgroup.hu/" class="btn-coral">
+          Ajánlatot kérek
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#modellek" class="btn-outline-w">Modelleket nézek</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hs-item">
+          <div class="hs-num">90</div>
+          <div class="hs-label">Nap átadás</div>
+        </div>
+        <div class="hs-item">
+          <div class="hs-num">430k</div>
+          <div class="hs-label">Ft/m²-től</div>
+        </div>
+        <div class="hs-item">
+          <div class="hs-num">30+</div>
+          <div class="hs-label">Modell</div>
+        </div>
+        <div class="hs-item">
+          <div class="hs-num">A1</div>
+          <div class="hs-label">Tűzálló</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://gvgroup.hu/wp-content/uploads/2023/06/sipeuropa-newyork-2.jpg"
+         alt="SIP modulház" id="heroImg">
+    <div class="hero-right-overlay"></div>
+    <div class="hero-badge">
+      430.000 Ft/m²-től
+      <span>kulcsrakész ár</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="m-dot"></span>90 NAPOS ÁTADÁS</span>
+    <span class="marquee-item"><span class="m-dot"></span>A1 TŰZÁLLÓSÁG</span>
+    <span class="marquee-item"><span class="m-dot"></span>MgO SIP PANEL</span>
+    <span class="marquee-item"><span class="m-dot"></span>430.000 FT/M²</span>
+    <span class="marquee-item"><span class="m-dot"></span>CSOK KOMPATIBILIS</span>
+    <span class="marquee-item"><span class="m-dot"></span>OTP BANK PARTNER</span>
+    <span class="marquee-item"><span class="m-dot"></span>40-50% ENERGIAMEGTAKARÍTÁS</span>
+    <span class="marquee-item"><span class="m-dot"></span>30+ MODELL</span>
+    <span class="marquee-item"><span class="m-dot"></span>DEBRECEN · GV GROUP</span>
+    <span class="marquee-item"><span class="m-dot"></span>90 NAPOS ÁTADÁS</span>
+    <span class="marquee-item"><span class="m-dot"></span>A1 TŰZÁLLÓSÁG</span>
+    <span class="marquee-item"><span class="m-dot"></span>MgO SIP PANEL</span>
+    <span class="marquee-item"><span class="m-dot"></span>430.000 FT/M²</span>
+    <span class="marquee-item"><span class="m-dot"></span>CSOK KOMPATIBILIS</span>
+    <span class="marquee-item"><span class="m-dot"></span>OTP BANK PARTNER</span>
+    <span class="marquee-item"><span class="m-dot"></span>40-50% ENERGIAMEGTAKARÍTÁS</span>
+    <span class="marquee-item"><span class="m-dot"></span>30+ MODELL</span>
+    <span class="marquee-item"><span class="m-dot"></span>DEBRECEN · GV GROUP</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-band">
+  <div class="stats-row reveal">
+    <div class="stat-col">
+      <div class="stat-num"><span data-target="90">0</span></div>
+      <div class="stat-unit">Nap</div>
+      <div class="stat-note">Kulcsrakész átadás</div>
+    </div>
+    <div class="stat-col">
+      <div class="stat-num">430<sup>e</sup></div>
+      <div class="stat-unit">Ft/m²-től</div>
+      <div class="stat-note">Kulcsrakész ár</div>
+    </div>
+    <div class="stat-col">
+      <div class="stat-num"><span data-target="30">0</span>+</div>
+      <div class="stat-unit">Modell</div>
+      <div class="stat-note">Típusterv</div>
+    </div>
+    <div class="stat-col">
+      <div class="stat-num"><span data-target="50">0</span>%</div>
+      <div class="stat-unit">Megtakarítás</div>
+      <div class="stat-note">Energiaköltség</div>
+    </div>
+    <div class="stat-col">
+      <div class="stat-num">A1</div>
+      <div class="stat-unit">Tűzminősítés</div>
+      <div class="stat-note">EU legjobb osztály</div>
+    </div>
+  </div>
+</div>
+
+<!-- TECHNOLÓGIA -->
+<section class="tech-section sec-pad" id="technologia">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="tag">Miért modulházt?</div>
+      <h2 class="sec-title">Nem egy átlagos<br><em>könnyűszerkezetes ház.</em></h2>
+      <p class="sec-sub">A GV Group modulháza gyári pontossággal készül, MgO SIP panelrendszerrel. Nem hónapok, nem bizonytalanság – hanem 90 nap, fix ár, igazolt minőség.</p>
+    </div>
+    <div class="pillars-grid reveal">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <span class="pillar-icon">🏭</span>
+        <h3>Gyári pontosság</h3>
+        <p>CNC vezérelt panel gyártás saját üzemben. Nulla hulladék, nulla várakozás, igazolt méretek. Minden panel az Ön terveihez szabva.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <span class="pillar-icon">🔥</span>
+        <h3>MgO SIP panel</h3>
+        <p>A1 tűzálló magnézium-oxid burkolat, 14 cm grafitos EPS mag. Passzívháztól A++ energiaosztályig – 50 év rendszergaranciával.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <span class="pillar-icon">🔑</span>
+        <h3>Komplex kivitelezés</h3>
+        <p>Tervezéstől a kulcsátadásig egy kézből. Saját debreceni csapat, fix árak, áttranszparens folyamat. Nincs meglepetés.</p>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="reveal">
+        <div class="tag">Panel felépítése</div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:700;color:var(--black);margin-bottom:8px;letter-spacing:-.5px;">3 réteg, tökéletes védelem</h3>
+        <p style="font-size:13px;color:var(--text-lt);margin-bottom:28px;">Hő-, hang- és tűzvédelem egy szerkezetben</p>
+        <div class="layer-stack">
+          <div class="layer-row">
+            <div class="l-num">1</div>
+            <div class="l-text">
+              <strong>Külső MgO lap</strong>
+              <span>Magnézium-oxid – A1 tűzálló, vízálló, sóálló</span>
+            </div>
+            <span class="l-tag">A1</span>
+          </div>
+          <div class="layer-row">
+            <div class="l-num">2</div>
+            <div class="l-text">
+              <strong>14 cm grafitos EPS mag</strong>
+              <span>Grafit-adalékos polisztirol – passzívház szintű szigetelés</span>
+            </div>
+            <span class="l-tag">Passzív</span>
+          </div>
+          <div class="layer-row">
+            <div class="l-num">3</div>
+            <div class="l-text">
+              <strong>Belső MgO lap</strong>
+              <span>Precíz belső felület – antiallergén, tűzálló</span>
+            </div>
+            <span class="l-tag">Antiall.</span>
+          </div>
+        </div>
+        <div style="margin-top:28px;padding:18px 22px;background:var(--gray-lt);border-left:3px solid var(--coral);">
+          <p style="font-size:13px;color:var(--text-lt);line-height:1.6;">
+            <strong style="color:var(--black);">GV Group</strong> – Debrecen, Tarján u. 37. |
+            CNC vezérelt gyártás, helyi kivitelező csapattal.
+            <a href="https://gvgroup.hu" target="_blank" style="color:var(--coral);font-weight:600;text-decoration:none;"> → gvgroup.hu</a>
+          </p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="tag">Összehasonlítás</div>
+        <h3 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:700;color:var(--black);margin-bottom:8px;letter-spacing:-.5px;">Modulház vs. hagyományos</h3>
+        <p style="font-size:13px;color:var(--text-lt);margin-bottom:0;">Számokban és tényekben</p>
+        <div class="comp-wrap">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Jellemző</th>
+                <th class="th-brick">🏚️ Tégla</th>
+                <th class="th-eps">🏠 EPS SIP</th>
+                <th class="th-mod">⚡ Modulház<br><span class="mod-chip">MI</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Építési idő</td><td class="td-b">12–18 hónap</td><td class="td-e">4–6 hónap</td><td class="td-m"><strong>90 nap</strong></td></tr>
+              <tr><td>Tűzállóság</td><td class="td-b"><span class="yes">A1</span></td><td class="td-e"><span class="mid">E</span></td><td class="td-m"><span class="yes">A1</span></td></tr>
+              <tr><td>Energiaosztály</td><td class="td-b">B–C</td><td class="td-e">A+</td><td class="td-m"><strong>A++</strong></td></tr>
+              <tr><td>Rendszergarancia</td><td class="td-b">–</td><td class="td-e">–</td><td class="td-m"><strong>50 év</strong></td></tr>
+              <tr><td>Hulladék</td><td class="td-b"><span class="no">Sok</span></td><td class="td-e"><span class="mid">Közepes</span></td><td class="td-m"><span class="yes">Minimális</span></td></tr>
+              <tr><td>CSOK</td><td class="td-b"><span class="yes">Igen</span></td><td class="td-e"><span class="yes">Igen</span></td><td class="td-m"><span class="yes">Igen</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELŐNYÖK -->
+<section class="adv-section sec-pad" id="elonyok">
+  <div class="sec-inner">
+    <div class="reveal" style="margin-bottom:60px;">
+      <div class="tag tag-lt">6 ok, amiért modulházt érdemes választani</div>
+      <h2 class="sec-title sec-title-lt">A döntés<br><em>könnyű.</em></h2>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <div class="adv-num">01</div>
+        <span class="adv-icon">⚡</span>
+        <h3>90 napos átadás</h3>
+        <p>Gyári előregyártás + helyszíni összszerelés. Nem hónapok bizonytalansága, hanem precíz határidő.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-num">02</div>
+        <span class="adv-icon">🔥</span>
+        <h3>A1 Tűzállóság</h3>
+        <p>MgO magnézium-oxid panel – azonos kategória a betonnal. Lakásbiztosítóknál és bankoknál is előny.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-num">03</div>
+        <span class="adv-icon">💰</span>
+        <h3>Fix ár garancia</h3>
+        <p>430.000 Ft/m²-től, rejtett költségek nélkül. Amit megajánlunk, azt számlázunk – nincs meglepetés.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-num">04</div>
+        <span class="adv-icon">🏦</span>
+        <h3>CSOK + OTP Bank</h3>
+        <p>Állami támogatás igénybevehető, OTP Bank partner – kedvező hitelkonstrukciókkal.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-num">05</div>
+        <span class="adv-icon">☀️</span>
+        <h3>Napelem-ready</h3>
+        <p>A++ energiaosztály elérhető, napelemrendszer telepítésre előkészítve. 40-50% energiamegtakarítás.</p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="adv-num">06</div>
+        <span class="adv-icon">📐</span>
+        <h3>Egyedi tervezés</h3>
+        <p>30+ alapterv, igény szerint módosítható. Az Ön elképzelése, a mi precíziónkkal kivitelezve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELLEK -->
+<section class="models-section sec-pad" id="modellek">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="tag">Mintaháztípusok</div>
+      <h2 class="sec-title">Válasszon <em>alaprajzot</em></h2>
+      <p class="sec-sub">Minden modell MgO SIP panelből épül. 62 m²-től 143 m²-ig, egyszintestől emeletes variációkig. Ár: 430.000 Ft/m².</p>
+    </div>
+    <div class="filter-row reveal">
+      <button class="f-btn active" data-filter="all">Összes</button>
+      <button class="f-btn" data-filter="small">60–90 m²</button>
+      <button class="f-btn" data-filter="medium">91–130 m²</button>
+      <button class="f-btn" data-filter="large">130+ m²</button>
+      <button class="f-btn" data-filter="duplex">Emeletes</button>
+    </div>
+    <div class="models-grid" id="modelsGrid">
+
+      <div class="model-card" data-size="small">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-columbia-tipushaz21-01-1.jpg" alt="GV-Columbia" loading="lazy"><span class="model-tag">62 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Columbia</div><div class="model-specs"><span>📐 62 m²</span><span>🛏 1+1 szoba</span></div><div class="model-price">26,7 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card" data-size="small">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-milano-uj-tipushaz-2022-1.jpg" alt="GV-Milano" loading="lazy"><span class="model-tag">80 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Milano</div><div class="model-specs"><span>📐 80 m²</span><span>🛏 3 szoba</span></div><div class="model-price">34,4 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card" data-size="small">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-sydney-tipushaz-1.jpg" alt="GV-Sydney" loading="lazy"><span class="model-tag">83 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Sydney</div><div class="model-specs"><span>📐 83 m²</span><span>🛏 3 szoba</span></div><div class="model-price">35,7 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card" data-size="small">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-argentina-tipushaz21-01.jpg" alt="GV-Argentína" loading="lazy"><span class="model-tag">90 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Argentína</div><div class="model-specs"><span>📐 90 m²</span><span>🛏 2 szoba</span></div><div class="model-price">38,7 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-tokio-tipushaz21-01.jpg" alt="GV-Tokió" loading="lazy"><span class="model-tag">92 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Tokió</div><div class="model-specs"><span>📐 92 m²</span><span>🛏 2 szoba</span></div><div class="model-price">39,6 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-peru-tipushaz21-01.jpg" alt="GV-Peru" loading="lazy"><span class="model-tag">97 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Peru</div><div class="model-specs"><span>📐 97 m²</span><span>🛏 3 szoba</span></div><div class="model-price">41,7 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+
+      <div class="model-card hidden-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/sipeuropa-london-3.jpg" alt="GV-London" loading="lazy"><span class="model-tag">102 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-London</div><div class="model-specs"><span>📐 102 m²</span><span>🛏 2 szoba</span></div><div class="model-price">43,9 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/sipeuropa-newyork-2.jpg" alt="GV-San Francisco" loading="lazy"><span class="model-tag">109 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-San Francisco</div><div class="model-specs"><span>📐 109 m²</span><span>🛏 3 szoba</span></div><div class="model-price">46,9 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-kairo-tipushaz2022-2.jpg" alt="GV-Kairó" loading="lazy"><span class="model-tag">110 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Kairó</div><div class="model-specs"><span>📐 110 m²</span><span>🛏 3 szoba</span></div><div class="model-price">47,3 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-toronto-tipushaz2022-1.jpg" alt="GV-Toronto" loading="lazy"><span class="model-tag">122 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Toronto</div><div class="model-specs"><span>📐 122 m²</span><span>🛏 3 szoba</span></div><div class="model-price">52,5 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="medium">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-brazilia-tipushaz21-01.jpg" alt="GV-Brazília" loading="lazy"><span class="model-tag">125 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Brazília</div><div class="model-specs"><span>📐 125 m²</span><span>🛏 3 szoba</span></div><div class="model-price">53,8 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="large">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/koltozzma-honolulu-tipushaz21-01.jpg" alt="GV-Honolulu" loading="lazy"><span class="model-tag">134 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Honolulu</div><div class="model-specs"><span>📐 134 m²</span><span>🛏 3 szoba</span></div><div class="model-price">57,6 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="large">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/T5-1-2.jpg" alt="GV-Bali" loading="lazy"><span class="model-tag">158 m²</span></div>
+        <div class="model-body"><div class="model-name">GV-Bali</div><div class="model-specs"><span>📐 158 m²</span><span>🛏 2-3 szoba</span></div><div class="model-price">68 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="duplex">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/sipeuropa-tipushaz-EM1-2.jpg" alt="GV-Bombay" loading="lazy"><span class="model-tag">Emeletes</span></div>
+        <div class="model-body"><div class="model-name">GV-Bombay</div><div class="model-specs"><span>📐 48+35 m²</span><span>🛏 3 szoba</span></div><div class="model-price">35,9 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+      <div class="model-card hidden-card" data-size="duplex">
+        <div class="model-img"><img src="https://gvgroup.hu/wp-content/uploads/2023/06/sipeuropa-tipushaz-EM2-1.jpg" alt="GV-Jakarta" loading="lazy"><span class="model-tag">Emeletes</span></div>
+        <div class="model-body"><div class="model-name">GV-Jakarta</div><div class="model-specs"><span>📐 79+64 m²</span><span>🛏 4+1 szoba</span></div><div class="model-price">61,6 M Ft <span>bruttó ártól</span></div></div>
+      </div>
+    </div>
+
+    <div class="show-more-row">
+      <button class="btn-coral" id="showMoreBtn" onclick="toggleModels()">
+        Mutass többet
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://gvgroup.hu" target="_blank" class="gv-link">
+        Teljes modellkatalógus a GV Group oldalán
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOLYAMAT -->
+<section class="process-section sec-pad" id="folyamat">
+  <div class="sec-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:80px;">
+      <div class="tag" style="justify-content:center;">Hogyan épül fel?</div>
+      <h2 class="sec-title">5 lépés. <em>Kulcsra kész.</em></h2>
+    </div>
+    <div class="process-grid">
+      <div class="proc-step reveal">
+        <div class="proc-num">1</div>
+        <h4>Konzultáció &amp; Tervezés</h4>
+        <p>Személyes tanácsadás, alaprajz, engedélyek</p>
+        <span class="proc-time">1–2 hét</span>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">2</div>
+        <h4>Alap &amp; Előkészítés</h4>
+        <p>Telek előkészítés, alapozás, infrastruktúra</p>
+        <span class="proc-time">2–3 hét</span>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">3</div>
+        <h4>Panel Gyártás</h4>
+        <p>CNC vezérelt gyártás saját üzemben</p>
+        <span class="proc-time">2–4 hét</span>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">4</div>
+        <h4>Szerkezet Felállítása</h4>
+        <p>Panelek helyszíni összszerelése, tető</p>
+        <span class="proc-time">~1 hét</span>
+      </div>
+      <div class="proc-step reveal">
+        <div class="proc-num">5</div>
+        <h4>Befejezés &amp; Átadás</h4>
+        <p>Gépészet, elektromos, burkolás, kulcsátadás</p>
+        <span class="proc-time">6–8 hét</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TANÚSÍTVÁNYOK -->
+<section class="certs-section sec-pad">
+  <div class="sec-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:48px;">
+      <div class="tag" style="justify-content:center;">Tanúsítványok</div>
+      <h2 class="sec-title">Igazolt <em>minőség.</em></h2>
+    </div>
+    <div class="certs-row reveal">
+      <div class="cert"><span class="cert-ico">⭐</span><div class="cert-info"><strong>OPTEN A+</strong><span>Pénzügyileg stabil cég</span></div></div>
+      <div class="cert"><span class="cert-ico">🏦</span><div class="cert-info"><strong>OTP Bank Partner</strong><span>Kedvező hitelkonstrukciók</span></div></div>
+      <div class="cert"><span class="cert-ico">📋</span><div class="cert-info"><strong>NMÉ / ÉMI</strong><span>Magyar épületszerkezeti tanúsítvány</span></div></div>
+      <div class="cert"><span class="cert-ico">🔥</span><div class="cert-info"><strong>A1 Tűzminősítés</strong><span>EU legjobb tűzállósági osztály</span></div></div>
+      <div class="cert"><span class="cert-ico">🇪🇺</span><div class="cert-info"><strong>CE jelölés</strong><span>Európai megfelelőség</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <div class="tag">Debrecen és vonzáskörzete</div>
+    <h2>Indítsuk el<br>együtt.</h2>
+    <p>Kérjen személyre szabott ajánlatot – 48 órán belül visszahívjuk. Fix ár, átlátható folyamat, helyi csapat.</p>
+    <div class="cta-btns">
+      <a href="https://lead.gvgroup.hu/" class="btn-white">
+        Azonnali ajánlat kérése
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#kapcsolat" class="btn-outline-c">Írjon nekünk</a>
+    </div>
+  </div>
+</section>
+
+<!-- KAPCSOLAT -->
+<section class="contact-section sec-pad" id="kapcsolat">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="tag">Kapcsolat</div>
+      <h2 class="sec-title">Lépjen velünk<br><em>kapcsolatba.</em></h2>
+    </div>
+    <div class="instant-banner reveal">
+      <div class="ib-text">
+        <h3>Azonnali ajánlatot szeretne?</h3>
+        <p>Töltse ki rövid kérdőívünket – perceken belül felvesszük a kapcsolatot.</p>
+      </div>
+      <a href="https://lead.gvgroup.hu/" class="btn-coral" style="flex-shrink:0;font-size:11px;">
+        Ajánlatkérés most →
+      </a>
+    </div>
+    <div class="divider">vagy töltse ki az alábbi űrlapot</div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3>Elérhetőségeink</h3>
+        <div class="c-item">
+          <div class="c-ico">📞</div>
+          <div class="c-text">
+            <strong>+36 30 269 9018</strong>
+            <span>H–P 8:00–16:00 · Szo 8:00–12:00</span>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">📍</div>
+          <div class="c-text">
+            <strong>4032 Debrecen, Tarján u. 37.</strong>
+            <span>GV Group Befektető Kft.</span>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">🌐</div>
+          <div class="c-text">
+            <strong><a href="https://gvgroup.hu" target="_blank">gvgroup.hu</a></strong>
+            <span>Teljes modellkatalógus és részletes info</span>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">🕐</div>
+          <div class="c-text">
+            <strong>Nyitvatartás</strong>
+            <span>Hétfő–Péntek: 8:00–16:00<br>Szombat: 8:00–12:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-box reveal">
+        <h3>Ajánlatkérő űrlap</h3>
+        <form id="contactForm" novalidate>
+          <input type="hidden" name="_subject" value="Új ajánlatkérés – SIP Modul Házak">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none;">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Teljes név *</label>
+              <input type="text" name="nev" placeholder="Kovács János" required>
+            </div>
+            <div class="form-group">
+              <label>Telefonszám *</label>
+              <input type="tel" name="telefon" placeholder="+36 30 000 0000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>E-mail cím</label>
+            <input type="email" name="email" placeholder="pelda@email.hu">
+          </div>
+          <div class="form-group">
+            <label>Érdeklődési téma</label>
+            <select name="tema">
+              <option value="">Válasszon témát...</option>
+              <option>Modulház árajánlat</option>
+              <option>Mintaháztípusok</option>
+              <option>Finanszírozás / CSOK / OTP</option>
+              <option>Telekre vonatkozó kérdés</option>
+              <option>Egyéb</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Üzenet</label>
+            <textarea name="uzenet" placeholder="Írja le kérdését vagy igényét..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">Üzenet elküldése →</button>
+          <div class="f-ok" id="formOk">✓ Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot.</div>
+          <div class="f-err" id="formErr">✕ Hiba történt. Kérjük, hívjon minket telefonon.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="#" class="logo" style="text-decoration:none;">
+          <div class="logo-mark"><svg width="22" height="20" viewBox="0 0 22 20" fill="none"><polygon points="11,0 22,7 22,20 0,20 0,7" fill="white" opacity=".3"/><polygon points="11,4 18,9 18,16 4,16 4,9" fill="#FF4D2E" opacity=".6"/></svg></div>
+          <div class="logo-text">
+            <div class="logo-name" style="color:var(--white);">SIP Modul Házak</div>
+            <div class="logo-sub">GV Group</div>
+          </div>
+        </a>
+        <p>Moduláris MgO SIP technológiával épített kulcsrakész házak. A1 tűzálló, 50 év garancia, 90 napos átadás.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigáció</h4>
+        <ul>
+          <li><a href="#technologia">Technológia</a></li>
+          <li><a href="#elonyok">Előnyök</a></li>
+          <li><a href="#modellek">Modellek</a></li>
+          <li><a href="#folyamat">Folyamat</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>GV Group</h4>
+        <ul>
+          <li><a href="https://gvgroup.hu" target="_blank">gvgroup.hu</a></li>
+          <li><a href="https://lead.gvgroup.hu/" target="_blank">Ajánlatkérés</a></li>
+          <li><a href="https://siphazcentrum.hu" target="_blank">siphazcentrum.hu</a></li>
+          <li><a href="https://siphazdebrecen.hu" target="_blank">siphazdebrecen.hu</a></li>
+          <li><a href="https://sippaneldebrecen.hu" target="_blank">sippaneldebrecen.hu</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Elérhetőség</h4>
+        <ul>
+          <li><a href="tel:+36302699018">+36 30 269 9018</a></li>
+          <li><a href="#">4032 Debrecen</a></li>
+          <li><a href="#">Tarján u. 37.</a></li>
+          <li><a href="#">H–P 8–16 · Szo 8–12</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 GV Group Befektető Kft. | Cégjegyzékszám: 09-09-026901 | Adószám: 25189139-2-09</span>
+      <span class="footer-domain">sipmodulhazak.hu</span>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ── NAV ──
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  document.getElementById('scrollTop').style.display = window.scrollY > 400 ? 'flex' : 'none';
+});
+
+// ── HERO IMG ──
+window.addEventListener('load', () => {
+  const img = document.getElementById('heroImg');
+  if(img) img.classList.add('loaded');
+});
+
+// ── HAMBURGER ──
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.add('open');
+});
+document.getElementById('mobileClose').addEventListener('click', closeMobileMenu);
+function closeMobileMenu(){
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+// ── STAT COUNTER ──
+function animateCount(el) {
+  const target = parseInt(el.getAttribute('data-target'));
+  const dur = 1600, step = target / (dur / 16);
+  let cur = 0;
+  const t = setInterval(() => {
+    cur = Math.min(cur + step, target);
+    el.textContent = Math.floor(cur);
+    if(cur >= target) clearInterval(t);
+  }, 16);
+}
+let counted = false;
+const statsEl = document.querySelector('.stats-row');
+if(statsEl) {
+  new IntersectionObserver(entries => {
+    if(entries[0].isIntersecting && !counted) {
+      counted = true;
+      document.querySelectorAll('[data-target]').forEach(animateCount);
+    }
+  }, {threshold:.3}).observe(statsEl);
+}
+
+// ── REVEAL ──
+const ro = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if(e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      ro.unobserve(e.target);
+    }
+  });
+}, {threshold:.1});
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+// ── FILTER ──
+document.querySelectorAll('.f-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    showingAll = true;
+    document.querySelectorAll('.model-card').forEach(card => {
+      if(f === 'all' || card.dataset.size === f) {
+        card.style.display = 'block';
+        card.classList.remove('hidden-card');
+      } else {
+        card.style.display = 'none';
+        card.classList.add('hidden-card');
+      }
+    });
+    document.getElementById('showMoreBtn').style.display = f === 'all' ? 'inline-flex' : 'none';
+  });
+});
+
+// ── SHOW MORE ──
+let showingAll = false;
+function toggleModels() {
+  const hidden = document.querySelectorAll('.model-card.hidden-card');
+  const btn = document.getElementById('showMoreBtn');
+  if(!showingAll) {
+    hidden.forEach(c => { c.classList.remove('hidden-card'); c.style.display = 'block'; });
+    showingAll = true;
+    btn.innerHTML = 'Kevesebbet mutat <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>';
+  } else {
+    document.querySelectorAll('.model-card').forEach((c, i) => {
+      if(i >= 6) { c.classList.add('hidden-card'); c.style.display = 'none'; }
+    });
+    showingAll = false;
+    btn.innerHTML = 'Mutass többet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>';
+    document.getElementById('modellek').scrollIntoView({behavior:'smooth'});
+  }
+}
+
+// ── FORM ──
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const ok  = document.getElementById('formOk');
+  const err = document.getElementById('formErr');
+  ok.style.display = 'none'; err.style.display = 'none';
+  btn.textContent = 'Küldés...'; btn.disabled = true;
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/galiimre.gi@gmail.com', {
+      method:'POST',
+      headers:{'Accept':'application/json'},
+      body: new FormData(this)
+    });
+    const data = await res.json();
+    if(data.success === 'true' || data.success === true) {
+      ok.style.display = 'block'; this.reset();
+    } else { err.style.display = 'block'; }
+  } catch(ex) { err.style.display = 'block'; }
+  finally { btn.textContent = 'Üzenet elküldése →'; btn.disabled = false; }
+});
+</script>
+</body>
+</html>
