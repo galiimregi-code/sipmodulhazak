@@ -1,3 +1,6 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "https://www.sipmodulhazak.hu/:path*", "destination": "https://sipmodulhazak.hu/:path*", "permanent": true }
+  ]
 }
