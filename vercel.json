@@ -2,7 +2,6 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "redirects": [
-    { "source": "https://www.sipmodulhazak.hu/:path*", "destination": "https://sipmodulhazak.hu/:path*", "permanent": true },
     { "source": "/mintahazak",             "destination": "/", "permanent": true },
     { "source": "/mintahazak/:path*",      "destination": "/", "permanent": true },
     { "source": "/rolunk",                 "destination": "/", "permanent": true },
