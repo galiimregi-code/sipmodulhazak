@@ -3,7 +3,7 @@
     {
       "source": "/((?!google3f6327ddd70ec54b\\.html$).*)",
       "destination": "https://gvgroup.hu/modulhazak/",
-      "permanent": true
+      "statusCode": 301
     }
   ]
 }
