@@ -1,5 +1,9 @@
 {
   "redirects": [
-    { "source": "/((?!google3f6327ddd70ec54b\.html$).*)", "destination": "https://gvgroup.hu/modulhazak/", "permanent": true }
+    {
+      "source": "/((?!google3f6327ddd70ec54b\\.html$).*)",
+      "destination": "https://gvgroup.hu/modulhazak/",
+      "permanent": true
+    }
   ]
 }
